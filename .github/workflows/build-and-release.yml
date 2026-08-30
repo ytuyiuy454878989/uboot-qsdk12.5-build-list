@@ -54,10 +54,6 @@ on:
         required: true
         type: boolean
         default: false
-  
-  #push:
-  schedule:
-    - cron: "0 1/12 * * *"
 
 env:
   BUILD_TARGET: ${{ inputs.BUILD_TARGET }}
