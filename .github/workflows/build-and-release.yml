@@ -1,6 +1,9 @@
 # SPDX-License-Identifier: MIT
 # Copyright (C) 2026 chenxin527
 
+# SPDX-License-Identifier: MIT
+# Copyright (C) 2026 chenxin527
+
 name: 构建并发布
 permissions:
   contents: write
@@ -10,7 +13,7 @@ on:
   push:
   # pull_request:
   schedule:
-    - cron: "0 1/12 * * *"→ Runs at 00:00, on day 15 of the month
+    - cron: "0 1/12 * * *"
   workflow_dispatch:
 
     inputs:
