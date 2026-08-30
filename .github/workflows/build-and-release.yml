@@ -11,9 +11,6 @@ on:
   #push:
   schedule:
     - cron: "0 1/12 * * *"
-
-env:
-
     inputs:
       BUILD_TARGET:
         description: '设备选择'
