@@ -7,6 +7,10 @@ permissions:
   actions: write
 
 on:
+  push:
+  # pull_request:
+  schedule:
+    - cron: "0 1/12 * * *"→ Runs at 00:00, on day 15 of the month
   workflow_dispatch:
 
     inputs:
