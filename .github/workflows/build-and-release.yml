@@ -54,7 +54,6 @@ env:
   BUILD_TARGET: ${{ inputs.BUILD_TARGET }}
   PRERELEASE: ${{ inputs.PRERELEASE }}
 
-permissions: write-all
 
 jobs:
   core:
