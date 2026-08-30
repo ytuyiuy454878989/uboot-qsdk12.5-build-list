@@ -2,9 +2,18 @@
 # Copyright (C) 2026 chenxin527
 
 name: 构建并发布
+permissions:
+  contents: write
+  actions: write
 
 on:
   workflow_dispatch:
+  #push:
+  schedule:
+    - cron: "0 1/12 * * *"
+
+env:
+
     inputs:
       BUILD_TARGET:
         description: '设备选择'
