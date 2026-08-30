@@ -8,6 +8,7 @@ permissions:
 
 on:
   workflow_dispatch:
+
     inputs:
       BUILD_TARGET:
         description: '设备选择'
@@ -49,6 +50,10 @@ on:
         required: true
         type: boolean
         default: false
+  
+  #push:
+  schedule:
+    - cron: "0 1/12 * * *"
 
 env:
   BUILD_TARGET: ${{ inputs.BUILD_TARGET }}
